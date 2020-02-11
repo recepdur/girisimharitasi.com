@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <title>Girişim Haritası</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link rel="icon" type="image/ico" href="../favicon.ico"/>
+    <link href="../css/stylesheets.css" rel="stylesheet" type="text/css" />        
+  
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>     
+    <script type='../text/javascript' src='js/plugins/jquery/jquery.min.js'></script>
+    <script type='../text/javascript' src='js/plugins/jquery/jquery-ui.min.js'></script>   
+    <script type='../text/javascript' src='js/plugins/jquery/jquery-migrate.min.js'></script>
+    <script type='../text/javascript' src='js/plugins/jquery/globalize.js'></script>    
+    <script type='../text/javascript' src='js/plugins/bootstrap/bootstrap.min.js'></script>
+    
+    <script type='../text/javascript' src='js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'></script>
+    <script type='../text/javascript' src='js/plugins/uniform/jquery.uniform.min.js'></script>    
+    
+    <script type='../text/javascript' src='js/plugins.js'></script>    
+    <script type='../text/javascript' src='js/actions.js'></script>
+    <script type='../text/javascript' src='js/settings.js'></script>
+	
+	  
+		
+</head>
+<body class="bg-img-num1"> 
+
+     <div class="container">        
+       
+	   <div class="row">                   
+            <div class="col-md-12">                
+                 <nav class="navbar brb" role="navigation">
+                    <div class="navbar-header">                                           
+                        <a class="navbar-brand" href="index.php"><img src="../img/logo.png"/></a>                                                                                     
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.php">
+                                    <span class="icon-home"></span> Girişim Haritası
+                                </a>
+                            </li>                 
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="arama..."/>
+                            </div>                            
+                        </form>                                            
+                    </div>
+                </nav>   
+            </div>            
+        </div>
+        
+        <div class="scroll" id="layout_scroll">			  
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">					
+					<div class="block block-white">
+						<div class="header">
+							<h3>Firma Detayları</h3>                                                
+						</div>
+						<div class="toolbar" id="name">
+							x
+						</div>						
+						<div class="content">
+							Filled block content
+						</div>
+						<div class="toolbar">
+							<h2>Alanı</h2>    
+						</div>
+						<div class="content">
+							Filled block content
+						</div>
+						<div class="toolbar">
+							Filled block footer
+						</div>
+						<div class="content">
+							Filled block content
+						</div>
+						<div class="toolbar">
+							<h2>İletişim</h2>    
+						</div>
+						<div class="content">
+							Filled block content
+						</div>
+						<div class="toolbar">
+							Filled block footer
+						</div>
+						<div class="content">
+							Filled block content
+						</div>
+						<div class="toolbar">
+							Filled block footer
+						</div>
+						<div class="content">
+							<div class="block block-drop-shadow">
+								<div class="header">
+									<h2>Turkey</h2>
+								</div>
+								<div class="content np">
+									<div id="google_ptm_map" style="width: 100%; height:300px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>           
+				
+			</div>
+        </div> 
+
+    </div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+	
+	var mapCords = new google.maps.LatLng(38.9574155,35.2415759);
+    var mapOptions = {
+		zoom: 10,
+		center: mapCords, 
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	}    
+    var map = new google.maps.Map(document.getElementById("google_ptm_map"), mapOptions);
+	
+});
+
+</script>
+    
+</body>
+</html>

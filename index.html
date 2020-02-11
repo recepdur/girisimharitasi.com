@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <title>Girişim Haritası</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />        
+    
+    <script type='text/javascript' src='js/plugins/jquery/jquery.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-ui.min.js'></script>   
+    <script type='text/javascript' src='js/plugins/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/globalize.js'></script>    
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'></script>
+    <script type='text/javascript' src='js/plugins/uniform/jquery.uniform.min.js'></script>
+    
+    <script type='text/javascript' src='js/plugins/knob/jquery.knob.js'></script>
+    <script type='text/javascript' src='js/plugins/sparkline/jquery.sparkline.min.js'></script>
+    <script type='text/javascript' src='js/plugins/flot/jquery.flot.js'></script>     
+    <script type='text/javascript' src='js/plugins/flot/jquery.flot.resize.js'></script>
+       		
+	 <script type='text/javascript' src='js/plugins.js'></script>    
+    <script type='text/javascript' src='js/actions.js'></script>
+    <script type='text/javascript' src='js/charts.js'></script>
+
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>      
+    <script type='text/javascript' src='js/maps.js'></script>
+    <script type='text/javascript' src='js/settings.js'></script>
+	
+		<script type='text/javascript' src='js/plugins/uniform/jquery.uniform.min.js'></script>
+    <script type='text/javascript' src='js/plugins/select2/select2.min.js'></script>
+    <script type='text/javascript' src='js/plugins/tagsinput/jquery.tagsinput.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-ui-timepicker-addon.js'></script>
+    <script type='text/javascript' src='js/plugins/ibutton/jquery.ibutton.js'></script>
+    
+    <script type='text/javascript' src='js/plugins/validationengine/languages/jquery.validationEngine-en.js'></script>
+    <script type='text/javascript' src='js/plugins/validationengine/jquery.validationEngine.js'></script>
+    
+    <script type='text/javascript' src='js/plugins/maskedinput/jquery.maskedinput.min.js'></script>    
+    <script type='text/javascript' src='js/plugins/stepy/jquery.stepy.min.js'></script>    
+   
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<style type="text/css">
+.contextmenu {
+  font-size: 1.1em;
+  position: absolute;
+  width: 150px;
+  height: auto;
+  padding: 5px 0px;
+  border-radius: 5px;
+  top: 10;
+  left: 10;
+  background-color: #27ae60;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  color: #fff;
+}
+
+.contextmenu .context_item {
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.contextmenu .context_item:hover { background-color: #2ecc71; }
+
+.contextmenu .context_item .inner_item { margin: 0px 10px; }
+
+.contextmenu .context_item .inner_item i {
+  margin: 0 5px 0 0;
+  font-weight: bold;
+}
+
+.contextmenu .context_hr {
+  height: 1px;
+  border-top: 1px solid #eee;
+  margin: 3px 10px;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="bg-img-num1"> 
+    
+    <div class="page-container">
+        
+		<div class="page-sidebar">
+            <a href="index.html"><div class="page-navigation-panel logo"></div></a>
+            <div class="page-navigation-panel">
+                <div class="name">Girişim Haritası</div>
+                <div class="control"><a href="#" class="psn-control"><span class="icon-reorder"></span></a></div>
+            </div>            
+            <ul class="page-navigation">
+                <li>
+                    </br>
+                </li>                                                        
+            </ul>
+                        
+            <div class="block block-drop-shadow page-navigation-hide">
+                <div class="head bg-dot20">
+                    <h2>Sistem Durumu</h2>
+                    <div class="side pull-right">               
+                        <ul class="buttons">                                
+                            <li><a href="#"><span class="icon-cogs"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="head-subtitle">Kingston 2x8Gb DDR3 1866MHz</div>                        
+                    <div class="head-panel nm tac">
+                        <div class="sparkline">                            
+                            <span sparkType="pie" sparkWidth="100" sparkHeight="100">5079,3768,7537</span>
+                        </div>                                                         
+                    </div>
+                    <div class="head-panel nm">
+                        <div class="hp-info hp-simple pull-left hp-inline">
+                            <span class="hp-main"><span class="icon-circle"></span> Allocated 5079 Mb [ 31% ]</span>                                
+                        </div>                 
+                        <div class="hp-info hp-simple pull-left hp-inline">                                
+                            <span class="hp-main"><span class="icon-circle text-info"></span> In Cache 3768 Mb [ 23% ]</span>
+                        </div>                            
+                        <div class="hp-info hp-simple pull-left hp-inline">                                
+                            <span class="hp-main"><span class="icon-circle text-primary"></span> Aviable 7537 Mb [ 46% ]</span>
+                        </div>                                                
+                    </div>                        
+                </div>
+            </div>     
+        </div>
+       
+	    <div class="page-content">		
+			<div class="container">        					  									
+				<div class="row">
+					<div class="col-md-12">
+						<div class="block block-drop-shadow">
+							<div class="header">
+								<h2>Turkey</h2>
+							</div>
+							<div class="content np">
+								<div id="google_ptm_map" style="width: 100%; min-height: 800px; height: auto;"></div>
+							</div>
+						</div>
+					</div>
+				</div>        												
+			</div>  			
+        </div>
+			
+		<div class="modal" id="modal_default_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Firma Bilgileri</h4>
+					</div>
+					<div class="modal-body clearfix">				
+						<form id="validate" method="POST" action="javascript:alert('Form #validate submited');">							
+							<div class="content controls">    
+								<div class="form-row">
+									<div class="col-md-12">
+										<input type="text" class="mask_date" placeholder="Kuruluş Tarihi" class="validate[required,custom[date]] form-control"/>
+									</div>
+								</div>	
+								<div class="form-row">											
+									<div class="col-md-12">
+										<input type="text" placeholder="Adı" class="validate[required] form-control"/>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="col-md-12">
+										<select class="form-control">   
+											<option value="" disabled selected>Kategori</option>									
+											<option>Bilişim</option>										
+											<option>Biolojik</option>
+											<option>Tarım</option>
+										</select>
+									</div>
+								</div>    	
+								<div class="form-row">											
+									<div class="col-md-12">
+										<input type="text" id="il" placeholder="il" readonly="readonly" class="validate[required] form-control"/>
+									</div>
+								</div> 
+								<div class="form-row">											
+									<div class="col-md-12">
+										<input type="text" id="ilce" placeholder="ilçe" readonly="readonly" class="validate[required] form-control"/>
+									</div>
+								</div> 
+								<div class="form-row">											
+									<div class="col-md-12">
+										<input type="text" id="mahalle" placeholder="mahalle" class="validate[required] form-control"/>
+									</div>
+								</div> 
+								<div class="form-row">											
+									<div class="col-md-12">
+										<input type="text" id="sokak" placeholder="sokak" class="validate[required] form-control"/>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="col-md-12">
+										<div class="input-group file">                                    
+											<input type="text" class="form-control" placeholder="Firma Logosu"/>
+											<input type="file" name="file"/>
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="button">Yükle</button>
+											</span>
+										</div>                                
+									</div>
+								</div> 									
+
+								
+								<div class="modal-footer">                
+									<button type="button" class="btn btn-default btn-clean" data-dismiss="modal">Kapat</button>
+									<button type="button" class="btn btn-success btn-clean" onclick="newRecord();">Kaydet</button>
+								</div>					
+							</div> 
+						</form>							
+					</div>					
+				</div>
+			</div>
+		</div>    
+		
+		<div class="modal" id="modal_default_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Modal with table</h4>
+					</div>
+					<div class="modal-body clearfix">
+						
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>id</th>
+									<th>Country</th>
+									<th>Username</th>
+									<th>Visits</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>USA</td>
+									<td>Otto</td>
+									<td>25</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Germany</td>
+									<td>Thornton</td>
+									<td>22</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Ukraine</td>
+									<td>Dmitry</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Poland</td>
+									<td>Kack</td>
+									<td>18</td>
+								</tr>                                
+							</tbody>
+						</table>                     
+
+					</div>
+					<div class="modal-footer">                
+						<button type="button" class="btn btn-default btn-clean" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-warning btn-clean">Submit form</button>
+					</div>
+				</div>
+			</div>
+		</div>     
+ 
+	</div>
+	
+
+<script type="text/javascript">
+
+function newRecord(){
+
+	alert("burdaa");
+
+/*		
+	$.ajax({
+		type: "POST",
+		url: "{{URL::route('hayvandetaypost')}}",
+		data : {"transaction":"listPrescriptions", "animalId":animalId },		
+		cache: false,
+		success: function(result){
+			$("#tableList").html(result);		
+		} 
+	});		
+	*/
+}
+
+</script>
+    
+</body>
+</html>
